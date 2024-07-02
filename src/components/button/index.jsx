@@ -32,13 +32,13 @@ const Button = ({ name, action, icon }) => {
     const icone = useMemo(() => {
         switch (values.icone) {
             case "Whatsapp":
-                return <img alt="Ícone" src="../src/assets/icon-whatsapp.png"></img>
+                return <img alt="Ícone" src="./icon-whatsapp.png"></img>
             case "Instagram":
-                return <img alt="Ícone" src="../src/assets/icon-instagram.png"></img>
+                return <img alt="Ícone" src="./icon-instagram.png"></img>
             case "Valores":
-                return <img alt="Ícone" src="../src/assets/icon-valores.png"></img>
+                return <img alt="Ícone" src="./icon-valores.png"></img>
             case "Maps":
-                return <img alt="Ícone" src="../src/assets/icon-localizacao.png"></img>
+                return <img alt="Ícone" src="./icon-localizacao.png"></img>
             default:
                 break;
         }

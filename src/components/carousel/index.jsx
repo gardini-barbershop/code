@@ -18,9 +18,9 @@ const Carousel = () => {
       modules={[Autoplay]}
       className="mySwiper"
     >
-      <SwiperSlide><img alt="Imagem de fundo" src="../src/assets/swiper/swiper-1.jpeg"></img></SwiperSlide>
-      <SwiperSlide><img alt="Imagem de fundo" src="../src/assets/swiper/swiper-2.jpeg"></img></SwiperSlide>
-      <SwiperSlide><img alt="Imagem de fundo" src="../src/assets/swiper/swiper-3.jpeg"></img></SwiperSlide>
+      <SwiperSlide><img alt="Imagem de fundo" src="./swiper-1.jpeg"></img></SwiperSlide>
+      <SwiperSlide><img alt="Imagem de fundo" src="./swiper-2.jpeg"></img></SwiperSlide>
+      <SwiperSlide><img alt="Imagem de fundo" src="./swiper-3.jpeg"></img></SwiperSlide>
     </Swiper>
     )
 };
