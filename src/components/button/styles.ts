@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const Button = styled.button`
     text-align: center;
     position: relative;
-    padding: 4px 0 8px;
+    padding: 2px 0 4px;
     border-radius: 5px;
     background-color: #1FA637;
     border: 2px solid #ffffff;
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     font-family: "Roboto Slab", serif;
     & > p {
         position: absolute;

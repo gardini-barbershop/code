@@ -5,10 +5,9 @@ const Button = ({ name, action, icon }) => {
     const [values] = useState({ "name": name, "action": action, "icone": icon })
 
     function handleFunction(param) {
-        console.log(param.target.dataset.action);
         switch (param.target.dataset.action) {
             case "modal":
-                window.open("https://wa.me/5547984576843?text=Gostaria%20de%20agendar%20um%20hor%C3%A1rio!.");
+
                 break;
             case "enviar":
                 console.log(param.target.innerText);
@@ -35,8 +34,6 @@ const Button = ({ name, action, icon }) => {
                 return <img alt="Ícone" src="./icon-whatsapp.png"></img>
             case "Instagram":
                 return <img alt="Ícone" src="./icon-instagram.png"></img>
-            case "Valores":
-                return <img alt="Ícone" src="./icon-valores.png"></img>
             case "Maps":
                 return <img alt="Ícone" src="./icon-localizacao.png"></img>
             default:
@@ -45,7 +42,7 @@ const Button = ({ name, action, icon }) => {
     }, [values])
 
     return (
-        <S.Button data-action={`${action}`} onClick={(e) => { handleFunction(e) }}><p className={values.icone == "Valores" ? "ajustar" : ""}>{icone}</p>{name}</S.Button>
+        <S.Button data-action={`${action}`} onClick={(e) => { handleFunction(e) }}><p>{icone}</p>{name}</S.Button>
     )
 }
 
