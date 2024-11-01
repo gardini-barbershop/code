@@ -1,5 +1,5 @@
 import Modal from "react-modal";
-import Header from "../components/Header";
+import Header from "../components/header";
 import Button from "../components/button";
 import Carousel from "../components/carousel";
 import Pattern from "../components/svg/brick-pattern";
@@ -64,6 +64,9 @@ const home = () => {
             <p>8:00h ÀS 17:00h</p>
           </div>
         </S.Horarios>
+        <S.Powered>
+          Powered by @ <a href="https://www.faello.tech" target="_blank">Faello.tech</a>
+        </S.Powered>
       </S.Content>
       <Modal
         isOpen={modalIsOpen}
@@ -88,7 +91,7 @@ const home = () => {
 
           <div style={{ textAlign: "center", padding: "32px 0" }}>
             Última vez atualizado em <br />
-            <u>09/07/2024</u>
+            <u>01/11/2024</u>
           </div>
           <button
             onClick={() => {

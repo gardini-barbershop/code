@@ -1,7 +1,7 @@
 export const pricing = [
   {
     servico: "CORTE DEGRADÊ",
-    valor: "R$35.00"
+    valor: "R$40.00"
   },
   {
     servico: "CORTE MÁQUINA",
@@ -9,7 +9,7 @@ export const pricing = [
   },
   {
     servico: "BARBA",
-    valor: "R$35.00"
+    valor: "R$40.00"
   },
   {
     servico: "ACABAMENTO",

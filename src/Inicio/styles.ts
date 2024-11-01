@@ -78,6 +78,17 @@ export const Horarios = styled.div`
     }
   }
 `;
+export const Powered = styled.div`
+  color: #eee;
+  margin-top: 16px;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Roboto Slab", serif;
+  & > a {
+    text-decoration: none;
+    color: #eee;
+  }
+`;
 
 export const Info = styled.div`
   width: 100%;

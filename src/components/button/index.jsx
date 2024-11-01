@@ -12,7 +12,7 @@ const Button = ({ name, action, icon }) => {
             case "enviar":
                 console.log(param.target.innerText);
                 if (param.target.innerText == "Whatsapp") {
-                    window.open("https://wa.me/5547984576843?text=Gostaria%20de%20agendar%20um%20hor%C3%A1rio!.");
+                    window.open("https://wa.me/5547984576843?text=Olá!");
                     break;
                 }
                 if (param.target.innerText == "Instagram") {
