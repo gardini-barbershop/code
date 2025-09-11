@@ -8,8 +8,8 @@ import { Button as ButtonModal } from "../components/button/styles";
 import { useState } from "react";
 import { pricing } from "../content/pricing";
 
-const home = () => {
-  const [modalIsOpen, setIsOpen] = useState(false);
+const Home = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
     setIsOpen(true);
@@ -34,7 +34,7 @@ const home = () => {
   };
 
   return (
-    <main style={{height: "100vh"}}>
+    <main style={{ height: "100vh" }}>
       <Header />
       <S.CarouselContent>
         <Carousel></Carousel>
@@ -69,7 +69,7 @@ const home = () => {
         </S.Powered>
       </S.Content>
       <Modal
-        isOpen={modalIsOpen}
+        isOpen={isOpen}
         onRequestClose={closeModal}
         style={customStyles}
         contentLabel="Example Modal"
@@ -82,7 +82,7 @@ const home = () => {
           <ul>
             {pricing.map((element, index) => {
               return (
-                <li id={`${index}`}>
+                <li id={`${index}1`} key={`${index++}`}>
                   <span>{element.servico}</span> <span>{element.valor}</span>
                 </li>
               );
@@ -91,7 +91,7 @@ const home = () => {
 
           <div style={{ textAlign: "center", padding: "32px 0" }}>
             Última vez atualizado em <br />
-            <u>01/11/2024</u>
+            <u>11/09/2025</u>
           </div>
           <button
             onClick={() => {
@@ -106,4 +106,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;
