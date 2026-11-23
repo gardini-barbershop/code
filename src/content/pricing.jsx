@@ -13,7 +13,7 @@ export const pricing = [
   },
   {
     servico: "SOBRANCELHA",
-    valor: "R$15.00"
+    valor: "R$20.00"
   },
   {
     servico: "ACABAMENTO",
